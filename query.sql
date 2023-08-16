@@ -1,0 +1,6 @@
+CREATE DATABASE IF NOT EXISTS  seacatcode_mini_analytics;
+USE seacatcode_mini_analytics;
+
+CREATE TABLE IF NOT EXISTS UK_LIST (
+	CODE VARCHAR(30) NOT NULL PRIMARY KEY
+)
