@@ -32,4 +32,6 @@ app.use(function (err, req, res, next) {
     res.json({ errMsg: '500' });
 })
 
-app.listen();
+app.listen(PORT, function () {
+    console.log('listen', PORT);
+});
