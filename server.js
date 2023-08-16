@@ -39,6 +39,7 @@ app.get('/create', async (req, res, next) => {
     let d = new Date();
     let genRandom = String(d.getFullYear()).padStart(4, '0') + String(d.getMonth() + 1).padStart(2, '0') + String(d.getDate()).padStart(2, '0');
     // res.send((req.query.callback ?? 'callback') + '("' + genRandom + '")');
+    res.setHeader('Content-Type', 'text/plain');
     res.status(200).send(genRandom);
 });
 
